@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* navbar styling*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    background: crimson;
+    padding: 15px 0;
+}
+.navbar .logo a{
+    font-size: 45px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 18px;
+    margin: auto;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+.navbar .menu li a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+/* home section*/
+.home{
+    display: flex;
+    background: url("./200710.webp");
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    min-height: 500px;
+   
+}
+.home .max-width{
+    margin: auto 0 auto 165px;
+}
+.home .home-content .text-1{
+   font-size: 27px;
+   margin-top: 20px;
+}
+.home .home-content .text-2{
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: -3px;
+    font-family: 'Poppins', sans-serif;
+
+ }
+ .home .home-content .text-3{
+    font-size: 50px;
+    margin: 5px 0;
+ }
+ .home-content p{
+    width: 440px;
+    max-width: 100%;
+    color: #eee;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+ }
+
+ span{
+    color: #2ecc71;
+ }
+ .social a{
+    width: 36px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #eee;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255, 0.1);
+    margin-bottom: 35px;
+
+}
+.social a:hover{
+    transform: scale(1.1);
+    background: #2ecc71;
+    transition: .4s;
+
+}
